@@ -1,0 +1,663 @@
+<?php
+// Shows Errors.
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tesla inc.</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="libs/lightbox.min.css">
+	<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+    <link href="../CSS/index.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<a class="navbar-brand" href="images/logobig.png" data-lightbox="Header" data-title="Tesla inc."><img src="images/logosmall.png"></a>
+	<a class="navbar-brand" href="#"><h1>Tesla inc.</h1></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Factories
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="#linkfactory1">Gigafactory 1</a>
+					<a class="dropdown-item" href="#linkfactory2">Gigafactory 2</a>
+					<a class="dropdown-item" href="#linkfactory3">Gigafactory 3</a>
+					<a class="dropdown-item" href="#linkfactoryEU">Gigafactory Europe</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Car Models
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="#linkmodelS">Model S</a>
+					<a class="dropdown-item" href="#linkmodelY">Model Y</a>
+					<a class="dropdown-item" href="#linkmodel3">Model 3</a>
+					<a class="dropdown-item" href="#linkmodelX">Model X</a>
+					<a class="dropdown-item" href="#linkcybertruck">Cybertruck</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Founders
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="#linkelon">Elon Musk</a>
+					<a class="dropdown-item" href="#linkstraubel">JB Straubel</a>
+					<a class="dropdown-item" href="#linkmartin">Martin Eberhard</a>
+				</div>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" href="#linkfaq">FAQ</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#linkcontacts">Contact Us</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<!--- Image Slider -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="19"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="20"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="21"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="22"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="images/background1.jpg" alt="tesla1">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background2.jpg" alt="tesla2">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background3.jpg" alt="tesla3">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background4.jpg" alt="tesla4">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background5.jpg" alt="tesla5">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background6.jpg" alt="tesla6">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background7.jpg" alt="tesla7">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background8.jpg" alt="tesla8">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background9.jpg" alt="tesla9">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background10.jpg" alt="tesla10">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background11.jpg" alt="tesla11">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background12.jpg" alt="tesla12">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background13.jpg" alt="tesla13">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background14.jpg" alt="tesla14">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background15.jpg" alt="tesla15">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background16.jpg" alt="tesla16">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background17.png" alt="tesla17">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background18.jpg" alt="tesla18">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background19.jpg" alt="tesla19">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background20.jpg" alt="tesla20">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background21.jpg" alt="tesla21">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background22.jpg" alt="tesla22">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/background23.jpg" alt="tesla23">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+<!--- Welcome Section -->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+    <div class="col-12">
+        <h1 class="display-4">Tesla</h1>
+    </div>
+    <div class="col-12">
+        <p class="lead">
+			Tesla, Inc. (formerly Tesla Motors, Inc.), 
+			is an American automotive and energy company based in Palo Alto, California. 
+			The company specializes in electric car manufacturing and, through its SolarCity subsidiary, solar panel manufacturing. 
+			It operates multiple production and assembly plants, such as Gigafactory 1 near Reno, Nevada, 
+			and its main vehicle manufacturing facility at Tesla Factory in Fremont, California. 
+			As of March 2019, Tesla sells Model S, Model X, and Model 3 cars. 
+			It is accepting reservations for the Model Y, Roadster (2020),, Cybertruck, and Semi vehicles. 
+			Tesla also sells Powerwall, Powerpack, and Megapack batteries, solar panels, solar roof tiles, and some related products.
+			<a id="linkfactory1"></a>
+	</div>
+</div>
+</div>
+<!--- Factory section 1 transition -->
+<section class="fixed" id="factory1">
+		<div class="col-12">
+		</div>
+	</section>
+<!--- Gigafactory 1 -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-1">Gigafactory 1</h1>
+		</div>
+		<div class="col-12">
+			<p class="lead">
+				The Tesla Gigafactory 1 is a lithium-ion battery and electric vehicle subassembly factory near Reno, Nevada. 
+				The facility is owned and operated by Tesla, Inc. to supply the battery packs for its electric vehicles and stationary storage systems. 
+				It is located at the Tahoe Reno Industrial Center (TRIC) in Storey County, and employs around 3,000 people as of August 2018. 
+				The factory started limited production of Powerwalls and Powerpacks in the first quarter of 2016 using battery cells produced elsewhere, 
+				and began mass production of cells in January 2017. 
+				Nevada Governor Brian Sandoval estimated that Nevada would enjoy $100 billion in economic benefit over two decades from the construction and operation of this factory. 
+				The grand opening event was held on July 29, 2016. 
+				Gigafactory 1, in Nevada, is aligned on true north, which was done so that the equipment can be mapped by GPS and solar panels on the roof can be accurately aligned. 
+				The factory has also been designed to become entirely energy self-reliant. Tesla intends to power the structure through a combination of on-site solar, wind and geo-thermal sources. 
+				The building will have the largest footprint in the world and second largest volume when completed.
+			</p>
+			<a id="linkfactory2"></a>
+		</div>
+	</div>
+</div>
+<!--- Factory section 2 transition -->
+<section class="fixed" id="factory2">
+		<div class="col-12">
+		</div>
+	</section>
+<!--- Gigafactory 2 -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-1">Gigafactory 2</h1>
+		</div>
+		<div class="col-12">
+			<p class="lead">
+				The Tesla Gigafactory 2 is a photovoltaic (PV) cell factory leased by Tesla subsidiary SolarCity in Buffalo, New York. 
+				The factory, owned by the State of New York, 
+				was built on brownfield land remediated from a former steel mill. 
+				Construction of the factory started in 2014 and was completed in 2016–17. 
+				In 2013, the site of Gigafactory 2 was planned as a clean energy business incubation center. 
+				As SolarCity acquired Silevo in 2014 and merged into Tesla two years later, the factory was planned. The factory, 
+				in a partnership with Panasonic, started limited assembly of photovoltaic modules in 2017 using imported Japanese PV cells. 
+				It began commercial production of modules in 2017. In 2018, SolarCity began production of individual solar cells.In late 2019, 
+				Tesla announced that it would begin commercial installation of version 3 of its "Solar Roof" product over the following few months. 
+			</p>
+			<a id="linkfactory3"></a>
+		</div>
+	</div>
+</div>
+<!--- Factory section 3 transition -->
+<section class="fixed" id="factory3">
+		<div class="col-12">
+		</div>
+	</section>
+<!--- Gigafactory 3 -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-1">Gigafactory 3</h1>
+			
+		</div>
+		<div class="col-12">
+			<p class="lead">
+				Tesla Gigafactory 3 (Chinese: 特斯拉上海超级工厂) is a factory currently under construction in Shanghai, China by Tesla, Inc. 
+				The facility will produce battery cells along with Tesla Model 3 and Tesla Model Y cars, at an initial production rate target of 250,000 electric cars per year. 
+				The Shanghai regional government approved the agreement to build the production facility in July 2018, and a long-term lease was signed for about 86 hectares (210 acres) of land in October 2018. 
+				Construction began in December 2018 with the installation of secure fencing and site offices. 
+				The General Assembly Building was nearly complete by August 2019, and manufacturing line equipment was being installed for both batteries and automobiles. 
+				News reports in August noted production could start as early as November 2019, and CNBC reports that Tesla is expected to manufacture more than 6000 vehicles at Gigafactory 3 by year-end 2019. 
+				The plant had begun initial production of Tesla Model 3 cars by October 2019. While trial production on the general assembly line continues, additional production facilities for motors, seats, 
+				and powertrain assemblies are under construction in late 2019 with expected completion by March 2020. 
+				</p>
+				<a id="linkfactoryEU"></a>
+		</div>
+	</div>
+</div>
+<!--- Factory section Europe transition -->
+<section class="fixed" id="factoryEU">
+		<div class="col-12">
+		</div>
+	</section>
+<!--- Gigafactory Europe -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-1">Gigafactory Europe</h1>
+		</div>
+		<div class="col-12">
+			<p class="lead">
+				Tesla Gigafactory Europe (Gigafactory 4) is a proposed manufacturing plant for Tesla, Inc. 
+				,set to be constructed in Grünheide, near Berlin, Germany. The campus is 35 kilometres (20 mi) south-east of central Berlin on the Berlin–Wrocław railway, 
+				which forms the north border of the site between Erkner station and Fangschleuse railway station; and the A10 motorway, which forms the west border. 
+				The facility was officially announced by Tesla CEO Elon Musk on 12 November 2019 at the Das Goldene Lenkrad award show in Berlin 
+				and is set to produce batteries, battery packs and powertrains for use in Tesla vehicles. 
+				It will also serve for assembly of the Tesla Model Y, which was announced in March 2019. 
+				Construction of the facility is set to begin in early 2020, with a proposed start of production in late 2021. 
+				Musk also announced the establishment of a new design and development centre in nearby Berlin.
+			</p>
+			<a id="linkmodelS"></a>
+		</div>
+	</div>
+</div>
+<!--- Car models transition -->
+
+<!--- Cars1 transition -->
+<section class="fixed" id="cars1">
+		<div class="col-12">
+		</div>
+	</section>
+<!--- Model S -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-1">Model S</h1>
+		</div>
+		<div class="col-12">
+			<p class="lead">
+				The Tesla Model S is an all-electric five-door liftback sedan, produced by Tesla, Inc., and introduced on June 22, 2012. 
+				As of April 23, 2019, the Model S Long Range has an EPA range of 373 miles (600 km), which is higher than any other battery electric car. 
+				Model S' built after October 2016, have the option of Autonomous Driving, a feature that allows the car to operate without assistance from the driver, 
+				but the driver must supervise continuously and take control if there is an issue. This feature is called Autopilot. Sentry mode is available on Autopilot hardware 2+, 
+				built after August 2017. Sentry Mode senses and records suspicious activity around the car. 
+				Autopilot 2.0 also includes Enhanced Summon, which allows the car to drive through a parking lot to find you, without anybody in the driver's seat. 
+				Maximum distance is 200 feet and summoner must monitor the car and is responsible. 
+				The EPA rated the 2017 90D Model S's energy consumption at 3.096 miles per kWh (200.9 watt-hours per kilometer or 32.33 kWh/100 mi or 20.09 kWh/100 km)
+				for a combined fuel economy of 104 miles per gallon gasoline equivalent (2.26 L/100 km or 125 mpg‑imp). 
+				In 2016, Tesla updated the design of the Model S to closely match that of the Model X.
+				In April 2019, Tesla dropped the kWh branding in favor of the three named versions: Standard Range, Long Range, and Performance.
+				In July 2019, Tesla discontinued the Standard Range configuration, leaving just the Long Range and Performance versions available.
+				</p>
+			<a id="linkmodelY"></a>
+		</div>
+	</div>
+</div>
+<!--- Cars2 transition -->
+<section class="fixed" id="cars2">
+		<div class="col-12">
+		</div>
+	</section>
+<!--- Model Y -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-1">Model Y</h1>
+		</div>
+		<div class="col-12">
+			<p class="lead">
+				The Tesla Model Y is an upcoming electric compact crossover utility vehicle (CUV) in development by Tesla, Inc. 
+				It was unveiled in March 2019, with deliveries planned to begin in summer 2020. 
+				It is Tesla's second vehicle built upon the tier-3 mass-market-vehicle platform, alongside the Model 3. 
+				Model Y will offer optional third-row seats for a seven-passenger seating capacity.
+				There are currently four planned powertrains for the Model Y: Standard Range, Long Range, Long Range with Dual-Motor All-Wheel Drive, and Performance. 
+				As of October 2019, all models were planned to be available by summer 2020, except the Standard Range model which is expected 6 months later. 
+				The Model Y fills a smaller size segment from its bigger sibling, the tier-2 premium market Tesla Model X.
+			</p>
+			<a id="linkmodel3"></a>
+		</div>
+	</div>
+</div>
+<!--- Cars3 transition -->
+<section class="fixed" id="cars3">
+		<div class="col-12">
+		</div>
+	</section>
+<!--- Model 3 -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-1">Model 3</h1>
+		</div>
+		<div class="col-12">
+			<p class="lead">
+				The Tesla Model 3 is an electric four-door sedan developed by Tesla. 
+				The Model 3 Standard Range Plus version delivers an EPA-rated all-electric range of 250 miles (402 km) and the Long Range versions deliver 322 miles (518 km). 
+				The Model 3 carries full self-driving hardware, with periodic software updates adding additional functionality.
+				Within a week of unveiling the Model 3 in 2016, Tesla revealed they had taken 325,000 reservations for the car. 
+				These reservations represented potential sales of over US$14 billion.[12][13] By August 2017, there were 455,000 net reservations. 
+				Limited production of the Model 3 began in mid-2017, with the first production vehicle rolling off the assembly line on July 7, 2017, 
+				with the official launch and delivery of the first 30 cars on July 28. 
+				On July 1, 2018, it was announced that Tesla had met its production goal of 5,000 cars in a week.
+				</p>
+			<a id="linkmodelX"></a>
+		</div>
+	</div>
+</div>
+<!--- Cars4 transition -->
+<section class="fixed" id="cars4">
+		<div class="col-12">
+		</div>
+	</section>
+<!--- Model X -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-1">Model X</h1>
+		</div>
+		<div class="col-12">
+			<p class="lead">The Tesla Model X is a mid-size all-electric luxury SUV made by Tesla, Inc.. 
+				The vehicle is unique in the concept that it uses falcon wing doors instead of traditional automotive doors. 
+				The prototype was unveiled at Tesla's design studios in Hawthorne, California on February 9, 2012. 
+				The Model X has an official EPA rated 250–325 mi (402–523 km) range and the combined fuel economy equivalent 
+				and energy consumption for the AWD P90D was rated at 89 mpg‑e (39 kW⋅h/100 mi). 
+				The Model X was developed from the full-sized sedan platform of the Tesla Model S. 
+				The Model X has an EPA Size Class as an SUV, and shares ~30% of its content with the Model S, half of the originally planned ~60%, 
+				and weighs about 10 percent more, both are being produced at the Tesla Factory in Fremont, California. First deliveries of the Model X began in September 2015. 
+				After one full year on the market, the Model X ranked in 2016 seventh among the world's best-selling plug-in cars. 
+				Global cumulative sales since inception totaled 106,689 units through September 2018.
+			</p>
+			<a id="linkcybertruck"></a>
+		</div>
+	</div>
+</div>
+<!--- Cars5 transition -->
+<section class="fixed" id="cars5">
+		<div class="col-12">
+		</div>
+	</section>
+<!--- Cybertruck concerns -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-1">Cybertruck</h1>
+		</div>
+		<div class="col-12">
+			<p class="lead">
+				The Tesla Cybertruck is an all-electric battery-powered light commercial vehicle in development by Tesla, Inc. 
+				Three models have been announced, with range estimates of 250–500 miles (400–800 km) and an estimated 0–60 mph time of 2.9–6.5 seconds, depending on the model. 
+				The stated goal of Tesla in developing the Cybertruck is to provide a sustainable energy substitute for the roughly 6,500 fossil 
+				fuel powered trucks sold per day in the United States. 
+				The base price of the rear-wheel drive model of the vehicle will be $39,900, with all-wheel drive models starting at $49,900. 
+				Cybertruck production is slated to begin in 2021, with more models being offered by 2022.
+				</p>
+			<a id="linkelon"></a>
+		</div>
+	</div>
+</div>
+
+<!--- Founders transition -->
+
+<!--- founder1 transition -->
+<section class="fixed" id="founder1">
+		<div class="col-12">
+		</div>
+</section>
+<!--- Elon Musk -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-1">Elon Musk</h1>
+		</div>
+		<div class="col-12">
+			<p class="lead">
+				Elon Reeve Musk FRS (/ˈiːlɒn/; born June 28, 1971) is a technology entrepreneur, investor, and engineer. 
+				He holds South African, Canadian, and U.S. citizenship and is the founder, CEO, and chief engineer/designer of SpaceX; 
+				CEO and product architect of Tesla, Inc.; co-founder of Neuralink; founder of The Boring Company; and co-founder and initial co-chairman of OpenAI. 
+				He was elected a Fellow of the Royal Society (FRS) in 2018. 
+				In December 2016, he was ranked 21st on the Forbes list of The World's Most Powerful People, and was ranked (co-)first on the Forbes list of the Most Innovative Leaders of 2019. 
+				He has a net worth of $22.8 billion and is listed by Forbes as the 40th-richest person in the world.
+				He is the longest tenured CEO of any automotive manufacturer globally.
+				Born and raised in Pretoria, South Africa, Musk moved to Canada when he was 17 to attend Queen's University. He transferred to the University of Pennsylvania two years later, 
+				where he received a Bachelor's degree in economics from the Wharton School and a Bachelor's degree in physics from the College of Arts and Sciences. 
+				He began a Ph.D. in applied physics and material sciences at Stanford University in 1995 but dropped out after two days to pursue an entrepreneurial career. 
+				He subsequently co-founded Zip2 with his brother Kimbal, a web software company, which was acquired by Compaq for $340 million in 1999. 
+				Musk then founded X.com, an online bank. It merged with Confinity in 2000, which had launched PayPal the previous year and was bought by eBay for $1.5 billion in October 2002.
+				In May 2002, Musk founded SpaceX, an aerospace manufacturer and space transport services company, of which he is CEO and lead designer. He joined Tesla, Inc., 
+				an electric vehicle manufacturer, in 2004, the year after it was founded, and became its CEO and product architect. 
+				In 2006, he inspired the creation of SolarCity, a solar energy services company (now a subsidiary of Tesla) and operated as its chairman. 
+				In 2015, Musk co-founded OpenAI, a nonprofit research company that aims to promote friendly artificial intelligence. 
+				In July 2016, he co-founded Neuralink, a neurotechnology company focused on developing brain–computer interfaces. 
+				In December 2016, Musk founded The Boring Company, an infrastructure and tunnel-construction company. 
+				In addition to his primary business pursuits, Musk has envisioned a high-speed transportation system known as the Hyperloop, 
+				and has proposed a vertical take-off and landing supersonic jet electric aircraft with electric fan propulsion, known as the Musk electric jet. 
+				Musk has stated that the goals of SpaceX, Tesla, and SolarCity revolve around his vision to change the world and humanity. 
+				His goals include reducing global warming through sustainable energy production and consumption, 
+				and reducing the risk of human extinction by establishing a human colony on Mars.
+				</p>
+			<a id="linkstraubel"></a>
+		</div>
+	</div>
+</div>
+<!--- founder2 transition -->
+<section class="fixed" id="founder2">
+		<div class="col-12">
+		</div>
+</section>
+<!--- JB Straubel -->
+<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-1">JB Straubel</h1>
+			</div>
+			<div class="col-12">
+				<p class="lead">
+					Jeffrey Brian Straubel (born December 20, 1975) is part of the founding team and the former Chief Technical Officer of Tesla Inc. 
+					At Tesla, Straubel oversaw the technical and engineering design of the vehicles. 
+					Straubel also had responsibility for new technology evaluation, R&D, technical diligence review of key vendors and partners, IP, and systems validation testing. 
+					In addition to his work at Tesla, Straubel was also on the Board of Directors for SolarCity. 
+					He is also a lecturer at his alma mater, Stanford University, where he teaches the Energy Storage Integration class in the Atmosphere and Energy Program. 
+					On a press call on July 25, 2019, Elon Musk announced JB was stepping down from his day-to-day role as an executive at the automaker.
+					</p>
+				<a id="linkmartin"></a>
+			</div>
+		</div>
+	</div>
+<!--- founder3 transition -->
+<section class="fixed" id="founder3">
+		<div class="col-12">
+		</div>
+</section>
+<!--- Martin Eberhard -->
+<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-1">Martin Eberhard</h1>
+			</div>
+			<div class="col-12">
+				<p class="lead">
+					Martin Eberhard (born May 15, 1960) is an American engineer and business executive. 
+					He founded Tesla, Inc. (then Tesla Motors) with Marc Tarpenning in 2003, serving as CEO until 2007.
+					Eberhard was ranked among the top 24 innovators of 2007 by Fortune Magazine. Also in 2007, 
+					Business 2.0 Magazine ranked Eberhard number 32 of the 50 people "who matter now".
+					On November 30, 2007 Tesla released a press release titled "Martin Eberhard, Co-founder of Tesla Motors, to Transition to Advisory Board." 
+					According to the Tesla Motors Club forum[8] and CNN Money, 
+					Martin was asked to leave, but the reason for being asked is not publicly available.
+					<a id="linkfaq"></a>
+			</div>
+		</div>
+	</div>
+<!--- FAQ transition -->
+<section class="fixed" id="faq">
+		<div class="col-12">
+		</div>
+</section>
+<!--- Frequently Asked Questions -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-1">FAQ</h1>
+		</div>
+		<table class="table table-striped">
+		<tbody>
+		<tr>
+			<td>How do I pick up my vehicle?</td>
+			<td>What are the accepted methods of payment?</td>
+			<td>What kind of warranties does a Tesla come with?</td>
+		</tr>
+		<tr>
+			<td>Pick up your car at your nearest Service Center, sign your paperwork and receive a brief car introduction that will cover the basics of operating your new Tesla.</td>
+			<td>Final payment may be remitted via electronic check (direct debit) or ACH transfer in your Tesla Account, wire transfer or cashier’s check at time of pick-up. 
+				Credit cards can only be used for the initial deposit.</td>
+			<td>All new Tesla vehicles come with the New Vehicle Limited Warranty.</td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+</div>
+<!-- Contact form -->
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <form action="index.php#sazina" method="post">
+                <div class="form-group">
+                    <h3><label for="name">Name</label></h3>
+                    <input type="name" class="form-control" id="name" aria-describedby="Name" placeholder="Name" name="name">
+                </div>
+                <div class="form-group">
+                    <h3><label for="surname">Surname</label></h3>
+                    <input type="surname" class="form-control" id="surname" aria-describedby="Surname" placeholder="Surname" name="surname">
+                </div>
+                <div class="form-group">
+                    <h3><label for="email">E-mail</label></h3>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-mail" name="e-mail">
+                </div>
+                <div class="form-group">
+                    <h3><label for="telephone">Phone Number</label></h3>
+                    <input type="telephone" class="form-control" id="telephone" placeholder="mobile" name="mobile">
+                </div>
+                <div class="form-group">
+                    <h3><label for="textArea">Your Question</label></h3>
+                    <textarea class="form-control" id="textarea" rows="4" name="question" placeholder="Question"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" name="save">Submit</button>
+            </form>
+        </div>
+    </div>
+<!-- Php code -->
+<?php
+if(isset($_POST['save'])) {
+    if(empty($_POST['name']))
+    {
+        echo "<b>Name:</b> CANNOT BE EMPTY!</br>";
+    } else {
+        if(preg_match('~[0-9]+~', $_POST['name'])) {
+            echo "<b>Name:</b> CAN'T CONTAIN NUMBERS!</br>";
+        } else {
+            echo "<b>Name:</b> {$_POST['name']}</br>";
+        }
+    }
+    if(empty($_POST['surname']))
+    {
+        echo "<b>Surname:</b> CANNOT BE EMPTY!</br>";
+    } else {
+        if(preg_match('~[0-9]+~', $_POST['surname'])) {
+            echo "<b>Surname:</b> CAN'T CONTAIN NUMBERS!</br>";
+        } else {
+            echo "<b>Surname:</b> {$_POST['surname']}</br>";
+        }
+    }
+    if(empty($_POST['e-mail']))
+    {
+        echo "<b>E-mail:</b> CANNOT BE EMPTY!</br>";
+    } else {
+        echo "<b>E-mail: </b>{$_POST['e-mail']}</br>";
+    }
+    if(empty($_POST['mobile']))
+    {
+        echo "<b>Phone Number:</b> CANNOT BE EMPTY!</br>";
+    } else {
+        if(preg_match('~[aA-zZ]+~', $_POST['surname'])) {
+            echo "<b>Phone Number: </b>CAN'T CONTAIN LETTERS!</br>";
+        } else {
+            echo "<b>Phone Number: </b>{$_POST['mobile']}</br>";
+        }
+    }
+    echo "<b>Question: </b>{$_POST['question']}";
+}
+?>
+
+<!--- Footer -->
+<footer>
+	<a id="linkcontacts"></a>
+	<div class="container-fluid padding">
+	<div class="row text-center">
+    	<div class="col-lg-4">
+        	<h3>Our Main Headquarters</h3>
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.7939161698646!2d-122.15251378469334!3d37.394705679830416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb075776f1c3b%3A0xccc17e4da6b38370!2sTesla%20HQ!5e0!3m2!1sen!2slv!4v1576331340959!5m2!1sen!2slv" width="450" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    	</div>
+    	<div class="col-lg-4">
+        	<h3>Contact Us</h3>
+        	<p>+1 650-681-5000</p>
+        	<p>EUPress@tesla.com</p>
+        	<p>3500 Deer Creek Road</p>
+        	<p>Palo Alto, CA 94304</p>
+			<a href="https://github.com/mxgrph/mxgrph.github.io">Github</a>
+		</div>
+		<div class="col-lg-4">
+			<h3>Introducing Software Version 10.0</h3>
+			<iframe width="450" height="350" src="https://www.youtube.com/embed/NfMtONBK8dY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	</div>
+</footer>
+</body>
+</html>

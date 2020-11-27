@@ -1,0 +1,123 @@
+body {
+    height: 100%;
+    width: 100%;
+    color: rgb(37, 35, 35);
+}
+
+.padding {
+    padding-bottom: 2rem;
+}
+.container-fluid {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+.welcome {
+    width: 80%;
+    padding-left: 20%;
+}
+.display-1{
+    margin-top: -250px;
+}
+footer {
+    background-color: #3d3a3a;
+    color: #dddcdc;
+    padding-top: 2rem;
+}
+#factory1{
+    background-image:url(img/gigafactory1.jpg);
+}
+#factory2{
+    background-image:url(img/gigafactory2.jpg);
+}
+#factory3{
+    background-image:url(img/gigafactory3.jpg);
+}
+#factoryEU{
+    background-image:url(img/gigafactoryEU.jpg);
+}
+#cars1{
+    background-image:url(img/modelS.jpg);
+}
+#cars2{
+    background-image:url(img/modelY.jpg);
+}
+#cars3{
+    background-image:url(img/model3.jpg);
+}
+#cars4{
+    background-image:url(img/modelX.jpg);
+}
+#cars5{
+    background-image:url(img/cybertruck.jpg);
+}
+#founder1{
+    background-image:url(img/elon.jpg);
+}
+#founder2{
+    background-image:url(img/straubel.jpg);
+}
+#founder3{
+    background-image:url(img/martin.jpg);
+}
+#faq{
+    background-image:url(img/faq.jpg);
+}
+.fixed {
+    background-size:cover;
+    background-attachment:fixed;
+    min-height: 350px;
+}
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+/*--- Fixed Background Image --*/
+
+
+
+/*---Media Query --*/
+@media only screen and (max-width: 1000px) {
+    .welcome {
+        width: 100%;
+        padding-left: 0;
+    }
+    .navbar-brand img{
+        width:40px;
+        height:40px;
+    }
+    .navbar-brand h1{
+        font-size:1.8rem;
+    }
+}
+@media (max-width: 576px) {
+    .display-1{
+        font-size:3rem;
+        margin-top:-150px;
+    }
+    .display-4{
+        font-size:3rem;
+    }
+    .fixed{
+        min-height: 200px;
+    }
+}
+@media (max-width: 420px) {
+    iframe{
+        display:none;
+        }
+    table{
+    display:none;
+}
+}
