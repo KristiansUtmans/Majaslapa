@@ -1,3 +1,3 @@
-﻿# Kristiāns Utmans
+﻿# K
 mxgrph.github.io
 Decembra uzdevums.
